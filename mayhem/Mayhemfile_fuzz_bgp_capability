@@ -1,0 +1,8 @@
+project: savantenvs/frr
+target: fuzz_bgp_capability-mined-d5b0c76
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_bgp_capability-mined-d5b0c76/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_bgp_capability
+    libfuzzer: true
