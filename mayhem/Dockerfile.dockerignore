@@ -1,0 +1,14 @@
+# Used instead of upstream's root .dockerignore (which excludes .git): the commit image must hold the
+# FULL repo including .git history. Only local build outputs and cruft are dropped.
+mayhem/build-fuzz/*
+!mayhem/build-fuzz/.gitignore
+mayhem/build-test/*
+!mayhem/build-test/.gitignore
+**/__pycache__/
+**/*.o
+**/*.lo
+**/*.la
+**/.libs
+.DS_Store
+*.swp
+*~
